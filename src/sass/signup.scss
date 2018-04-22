@@ -1,0 +1,46 @@
+#MMPage__Signup{
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  font-family: $fontFam2;
+  .Signup{
+    @include e('item'){
+      padding: 50px;
+      border-top: solid 1px $SecHover;
+      &.item1{
+        background: $topbutton;
+        font-size: 25px;
+        font-family: $fontFam2;
+        display: flex;
+        align-items: center;
+      }
+      &.item2{
+        background: url('/images/signup-image.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: $MMWhite;
+        font-size: 40px;
+        font-family: 'Old Standard TT', serif;
+        padding: 105px 174px;
+      }
+    }
+    @include e('svg'){
+      fill: $MMWhite;
+    }
+    @include e('form'){
+      margin-top: 25px;
+      input{
+        height: 40px;
+        width: 40%;
+      }
+      .Signup__btn{
+        background: #00DFD4;
+        padding: 13px 65px;
+        font-size: 15px;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    }
+  }
+}

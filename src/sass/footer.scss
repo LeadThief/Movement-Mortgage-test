@@ -1,0 +1,35 @@
+#MMPage__Footer{
+  background: $Fotter;
+  color: $MMWhite;
+  font-family: $fontFam2;
+  display: grid;
+  grid-template-columns: 15% 1fr 1fr 15%;
+  padding: 55px 0;
+  .Footer{
+    @include e('nav'){
+      grid-column: 2/4;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 15px 0;
+      p{
+        font-size: 16px;
+        color: #c4c4c4;
+      }
+      h2{
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Old Standard TT', serif;
+        margin-bottom: 9px;
+      }
+    }
+    @include e('info'){
+      grid-column: 2/4;
+      margin-top: 35px;
+      .Footer__p{
+        color: #62676b;
+        line-height: 22px;
+      }
+    }
+  }
+}

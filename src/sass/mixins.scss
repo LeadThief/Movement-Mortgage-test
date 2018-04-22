@@ -1,0 +1,23 @@
+@mixin e($element) {
+    &__#{$element} {
+        @content;
+    }
+}
+
+@mixin m($modifier) {
+    &--#{$modifier} {
+        @content;
+    }
+}
+
+
+@mixin state($class, $parent: nil) {
+    &[class*='--#{$class}'] {
+        @content;
+    }
+}
+@mixin media($bp) {
+    @media (max-width: $bp) {
+        @content;
+    }
+}

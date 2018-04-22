@@ -1,0 +1,72 @@
+#MMPage{
+  display: grid;
+  grid-template-columns: repeat( 3, minmax(350px, 1fr) );
+  #MMPage__item{
+    grid-column: 1/4;
+    #MMPage__Profile{
+      .MMPage__Banner{
+        background: url('/images/header-image.jpg');
+        height: 100vh;
+        background-size: cover;
+        text-align: center;
+        background-repeat: no-repeat;
+        .MMPage__name{
+          margin-bottom: 45px;
+          .name__h1{
+            color: $Secondary;
+            font-size: 55px;
+            font-weight: bold;
+            margin-top: 40px;
+          }
+        }
+      }
+      .MMPage__photo{
+        img{
+          border-radius: 100%;
+          width: 250px;
+          height: 250px;
+        }
+        
+      }
+      .MMPage__underBanner{
+        display: grid;
+        grid-template-columns: repeat( 2, minmax(250px, 1fr) );
+        border-bottom: solid 1px $SecHover;
+        .MMPage__tips{
+          background: $MMWhite;
+          color: $Secondary;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 39px;
+          font-weight: bold;
+          padding: 0 140px;
+          line-height: 55px;
+          .MMPage__svg{
+            fill: $Secondary;
+          }
+        }
+        .MMPage__video{
+          background: url('/images/video-image_v2.jpg');
+          background-size: cover;
+          padding: 100px;
+          text-align: center;
+          background-repeat: no-repeat;
+          .video__play {
+            margin-top: 15px;
+            font-family: $fontFam2;
+          }
+        }
+      }
+    }
+    .MMPage__btn{
+      background: $Primary;
+      padding: 15px;
+      font-size: 15px;
+      color: $MMWhite;
+      text-decoration: none;
+      font-weight: bold;
+      font-family: $fontFam2;
+    }
+  }
+}

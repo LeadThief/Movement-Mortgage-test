@@ -1,0 +1,80 @@
+@include media(1378px){
+  #MMPage__About .About__ul{
+    line-height: inherit;
+  }
+}
+
+@include media(1198px){
+  #MMPage__About {
+    grid-template-columns: 1fr;
+    padding: 60px 20px;
+  }
+}
+
+@include media(1100px){
+  #MMPage {
+    grid-template-columns: 1fr;
+  }
+
+  #MMPage__Signup{
+    grid-template-columns: 1fr;
+  }
+  #MMPage__Signup .Signup__item.item1{
+    font-size: 28px;
+    padding: 70px;
+  }
+  #MMPage #MMPage__item #MMPage__Profile .MMPage__underBanner {
+    grid-template-columns: 1fr;
+  }
+  #MMPage #MMPage__item #MMPage__Profile .MMPage__underBanner .MMPage__tips{
+    padding: 41px 140px;
+  }
+}
+
+@include media(780px){
+  #MMPage__About .About__item.item1,
+  #MMPage__About .About__item.item3{
+    grid-column: auto;
+    grid-row: auto;
+    grid-template-columns: 1fr;
+  }
+}
+
+@include media(691px){
+  #MMPag__nav .nav__menu {
+    justify-self: center;
+  }
+  #MMPage #MMPage__item #MMPage__Profile .MMPage__underBanner .MMPage__tips {
+    padding: 20px 80px;
+  }
+  #MMPage__Signup .Signup__item.item2{
+    padding: 15px;
+  } 
+  #MMPage #MMPage__item #MMPage__Profile .MMPage__underBanner {
+    margin-top: 65px;
+  }
+}
+
+@include media(500px){
+  #MMPage__Footer{
+    grid-template-columns: 1fr;
+    padding: 55px 32px;
+  }
+  #MMPage__Footer .Footer__nav{
+    grid-column: auto;
+    flex-wrap: wrap;
+    padding: 0 25px;
+    width: 100px;
+  }
+  #MMPage__Footer .Footer__nav div{
+    padding: 15px 0;
+  }
+}
+
+@include media(376px){
+  #MMPag__nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+  }
+}

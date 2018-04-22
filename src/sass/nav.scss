@@ -1,0 +1,14 @@
+#MMPag__nav{
+  display: grid;
+  grid-template-columns: repeat( 2, minmax(250px, 1fr) );
+  padding: 20px;
+  .nav__menu{
+    justify-self: right;
+    div{
+      width: 35px;
+      height: 5px;
+      background-color: black;
+      margin: 6px 0;
+    }
+  }
+}
